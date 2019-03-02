@@ -541,7 +541,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
 }
-.round-select .select-face i {
+.round-select .select-face i, .round-select .select-face svg {
   color: #fff;
   background: #009f9d;
   padding: 10px;
@@ -549,7 +549,8 @@ h6, .h6 {
   -webkit-transition: border-radius 0.1s;
   transition: border-radius 0.1s;
 }
-.round-select:hover .select-face i {
+.round-select:hover .select-face i,
+.round-select:hover .select-face svg {
   border-radius: 50% 50% 0 0;
 }
 .round-select ul {

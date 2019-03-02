@@ -1,20 +1,30 @@
 import React from 'react';
+import languageReducer from './reducers/languageReducer';
 
 const Context = React.createContext();
 
 export class LanguageProvider extends React.Component {
     state = {
-        langs: ["es", "en"],
+        langs: [
+            {
+                id: 1,
+                name: 'Spanish',
+                iso: 'es',
+                imageURL: 'images/spain.svg',
+                alt: 'Spanish Language'
+            },
+            {
+                id: 2,
+                name: 'English',
+                iso: 'en',
+                imageURL: 'images/united-states.svg',
+                alt: 'English Language'
+            }
+        ],
         selected: "es",
-        selectLanguage: this.selectLanguage
-    }
-
-    selectLanguage = (lang) => {
-        const { langs } = this.state;
-
-        this.setState({
-            selected: langs.includes(lang) ? lang : "en"
-        });
+        dispatch: (action) => {
+            this.setState(languageReducer(this.state, action))
+        }
     }
 
     render () {

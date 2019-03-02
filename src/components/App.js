@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import Provider from './../context/Provider';
 import Resume from './page/Resume';
+import RoundSelector from './organisms/RoundSelector';
+import { LanguageConsumer } from './../context/LanguageContext';
+
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+
 import './../assets/css/app.css';
+
+library.add(faGlobe);
 
 class App extends Component {
   render() {
@@ -15,6 +23,15 @@ class App extends Component {
               </div>
             </div>
           </div>
+          <LanguageConsumer>
+            {value => (
+              <RoundSelector
+                face="globe"
+                items={value.langs}
+                handleClick={value.dispatch}
+              />
+            )}
+          </LanguageConsumer>
         </div>
       </Provider>
     );
