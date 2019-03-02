@@ -2,7 +2,7 @@ import React from 'react';
 
 const Context = React.createContext();
 
-export class ProfessionProvider extends React.Component {
+export class ProfessionalProvider extends React.Component {
     state = {
         exp: [
             {
@@ -45,4 +45,4 @@ export class ProfessionProvider extends React.Component {
     }
 }
 
-export const ProfessionConsumer = Context.Consumer;
+export const ProfessionalConsumer = Context.Consumer;
