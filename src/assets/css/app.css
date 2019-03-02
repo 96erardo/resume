@@ -1,0 +1,659 @@
+.bg-light {
+  background-color: #f3f9fb;
+}
+
+.my-1 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.mx-1 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.my-2 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.mx-2 {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.my-3 {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.mx-3 {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+
+.my-4 {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+.mx-4 {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+
+.my-5 {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.mx-5 {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: Rubik;
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 3.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/Rubik-Light.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 300;
+  font-style: italic;
+  src: url("fonts/Rubik-LightItalic.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/Rubik-Regular.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: italic;
+  src: url("fonts/Rubik-Italic.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/Rubik-Medium.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 500;
+  font-style: italic;
+  src: url("fonts/Rubik-MediumItalic.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/Rubik-Bold.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 700;
+  font-style: italic;
+  src: url("fonts/Rubik-BoldItalic.ttf");
+}
+@font-face {
+  font-family: Oswald;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/Oswald-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: italic;
+  src: url("fonts/Roboto-LightItalic.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: italic;
+  src: url("fonts/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: italic;
+  src: url("fonts/Roboto-BoldItalic.ttf");
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-xs-1 {
+  width: 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-xs-2 {
+  width: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-xs-3 {
+  width: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-xs-5 {
+  width: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-xs-6 {
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  width: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-xs-8 {
+  width: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-xs-9 {
+  width: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  width: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-xs-11 {
+  width: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-xs-12 {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-sm-2 {
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-sm-5 {
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-sm-8 {
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-sm-11 {
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-md-2 {
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-md-5 {
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-md-8 {
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-md-11 {
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-1 {
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-lg-2 {
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-lg-5 {
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-lg-8 {
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-lg-11 {
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-xl-2 {
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-xl-5 {
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-xl-8 {
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-xl-11 {
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.page {
+  background: #fff;
+  border-radius: 2px;
+  width: 100%;
+  padding: 0px;
+}
+.page .page-body {
+  padding: 50px;
+}
+.page .page-body .name {
+  font-family: Rubik;
+  font-weight: 700;
+  color: #444;
+}
+.page .page-body .profession {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0px 0px 0px 15px;
+}
+
+@keyframes dropdown {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+.round-select {
+  position: fixed;
+  font-size: 20px;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.round-select .select-face i {
+  color: #fff;
+  background: #009f9d;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-transition: border-radius 0.1s;
+  transition: border-radius 0.1s;
+}
+.round-select:hover .select-face i {
+  border-radius: 50% 50% 0 0;
+}
+.round-select ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-height: 0px;
+  position: absolute;
+  overflow-y: hidden;
+  background: #fff;
+}
+.round-select ul > li {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px;
+}
+.round-select ul > li:hover {
+  background: #eee;
+}
+.round-select ul > li img {
+  width: 60%;
+}
+.round-select:hover ul {
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+.block {
+  margin-bottom: 30px;
+}
+.block .title {
+  font-family: Oswald;
+  font-weight: 500;
+  color: #07456f;
+  text-transform: uppercase;
+}
+.block .block-content {
+  border-left: 2px solid #d8d6d6;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+.block .block-content ul {
+  margin: 0px 0px 5px 0px;
+  padding-left: 15px;
+  list-style: none;
+}
+.block .block-content ul li {
+  font-family: Roboto;
+  font-size: 0.8rem;
+}
+.block .block-content ul li .institution {
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-family: Roboto;
+}
+.block .block-content ul li .institution .role {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 300;
+  font-style: italic;
+}
+.block .block-content ul li p {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+.block .block-content ul li p.info {
+  font-weight: 300;
+  font-style: italic;
+  color: #333;
+}
+.block .block-content ul.list > li {
+  margin: 10px 0px;
+}
+
+.contact ul, .webs ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.contact ul li, .webs ul li {
+  margin: 2px 0px;
+  font-family: Roboto;
+  font-size: 0.8rem;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+a {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #009f9d;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
+}
+
+/*# sourceMappingURL=app.css.map */
