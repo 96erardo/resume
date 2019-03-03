@@ -20,7 +20,8 @@ export class PersonalProvider extends React.Component {
                 url: 'https://twitter.com/GerardoAGL96',
                 text: 'twitter.com/GerardoAGL96'
             }
-        ]
+        ],
+        dispatch: () => {}
     }
 
     render () {
@@ -33,3 +34,23 @@ export class PersonalProvider extends React.Component {
 }
 
 export const PersonalConsumer = Context.Consumer;
+
+export function withPersonalContext(WrappedComponent) {
+    class WithPersonalContext extends React.Component {
+        render () {
+            return (
+                <PersonalConsumer>
+                    {state => (
+                        <WrappedComponent {...this.props} {...state} />
+                    )}
+                </PersonalConsumer>
+            );
+        }
+    }
+
+    const name = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+    WithPersonalContext.displayName = `WithPersonalContext(${name})`;
+
+    return WithPersonalContext;
+};
