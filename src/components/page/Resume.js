@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import Personal from './../organisms/Personal';
 import Knowledge from './../organisms/Knowledge';
+import Experience from './../organisms/Experience';
 
 function Resume (props) {
     const { className } = props;
@@ -20,7 +21,7 @@ function Resume (props) {
                         <Knowledge />
                     </div>
                     <div className="col-md-7">
-
+                        <Experience />
                     </div>
                 </div>
             </div>
