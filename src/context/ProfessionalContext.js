@@ -33,6 +33,45 @@ export class ProfessionalProvider extends React.Component {
                     }
                 ]
             },
+        ],
+        knowledge: [
+            {
+                name: { es: 'Habilidades', en: 'Skills'},
+                nodes: [
+                    {
+                        es: 'Desarrollo web',
+                        en: 'Web development'
+                    },
+                    {
+                        es: 'Modelado de Bases de Datos',
+                        en: 'Database Modeling'
+                    },
+                    {
+                        es: 'Ingeniería del Software',
+                        en: 'Software Engineering'
+                    },
+                    {
+                        es: 'Capacidad de trabajo duro',
+                        en: 'Hardwork Capacity'
+                    },
+                    {
+                        es: 'Siempre abierto a aprender',
+                        en: 'Always open to learn'
+                    }
+                ]
+            },
+            {
+                name: { es: 'Tecnologías', en: 'Tools'},
+                nodes: [
+                    { es: 'Laravel', en: 'Laravel' },
+                    { es: 'Node.js', en: 'Node.js' },
+                    { es: 'React', en: 'React' },
+                    { es: 'JQuery', en: 'JQuery' },
+                    { es: 'MySQL', en: 'MySQL' },
+                    { es: 'PostgreSQL', en: 'PostgreSQL' },
+                    { es: 'MongoDB', en: 'MongoDB' }
+                ]
+            }
         ]
     }
 
@@ -46,3 +85,23 @@ export class ProfessionalProvider extends React.Component {
 }
 
 export const ProfessionalConsumer = Context.Consumer;
+
+export function withProfessionalContext (WrappedComponent) {
+    class WithProfessionalContext extends React.Component {
+        render () {
+            return (
+                <ProfessionalConsumer>
+                    {state => (
+                        <WrappedComponent {...this.props} {...state} />
+                    )}
+                </ProfessionalConsumer>
+            );
+        }
+    }
+
+    const name = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+    WithProfessionalContext.displayName = `WithProfessionalContext(${name})`;
+
+    return WithProfessionalContext;
+}
