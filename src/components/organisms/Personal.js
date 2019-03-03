@@ -11,7 +11,7 @@ function Personal (props) {
 
     const webs = links.map((elem, i) => (
         <li key={i}>
-            <a href={elem.url} target="_blank">{elem.text}</a>
+            <a href={elem.url} target="_blank" rel="noopener noreferrer">{elem.text}</a>
         </li>
     ));
 

@@ -5,13 +5,13 @@ import { withProfessionalContext } from '../../context/ProfessionalContext';
 function Knowledge (props) {
     const { knowledge, selected } = props;
 
-    const nodes = knowledge.map((item) => (
-        <div className="block">
+    const nodes = knowledge.map((item, n) => (
+        <div key={n} className="block">
             <h3 className="title">{item.name[selected]}</h3>
             <div className="block-content">
                 <ul className="list">
-                    {item.nodes.map((i) => (
-                        <li>{i[selected]}</li>
+                    {item.nodes.map((i, index) => (
+                        <li key={index}>{i[selected]}</li>
                     ))}
                 </ul>
             </div>
