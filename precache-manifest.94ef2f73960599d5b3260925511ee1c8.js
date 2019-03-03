@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "1c834b4058e2737bb9f88a07ccddc8bc",
-    "url": "/resume/static/media/Rubik-Medium.1c834b40.ttf"
+    "revision": "8bd53923acb5be36dc4da06f07ecfaf8",
+    "url": "/resume/static/media/Rubik-MediumItalic.8bd53923.ttf"
   },
   {
     "revision": "86e0debdbe30b93fc66e",
@@ -32,20 +32,20 @@ self.__precacheManifest = [
     "url": "/resume/static/media/Rubik-Regular.db5c7abf.ttf"
   },
   {
-    "revision": "5c0f34ddd45e3cf75ce29a3b9595ded8",
-    "url": "/resume/static/media/Rubik-Italic.5c0f34dd.ttf"
+    "revision": "1c834b4058e2737bb9f88a07ccddc8bc",
+    "url": "/resume/static/media/Rubik-Medium.1c834b40.ttf"
   },
   {
-    "revision": "d43efa6b8630dd2a1dcc1b35e8f9db41",
-    "url": "/resume/static/media/Rubik-Bold.d43efa6b.ttf"
+    "revision": "5c0f34ddd45e3cf75ce29a3b9595ded8",
+    "url": "/resume/static/media/Rubik-Italic.5c0f34dd.ttf"
   },
   {
     "revision": "86e0debdbe30b93fc66e",
     "url": "/resume/static/js/main.86e0debd.chunk.js"
   },
   {
-    "revision": "8bd53923acb5be36dc4da06f07ecfaf8",
-    "url": "/resume/static/media/Rubik-MediumItalic.8bd53923.ttf"
+    "revision": "d43efa6b8630dd2a1dcc1b35e8f9db41",
+    "url": "/resume/static/media/Rubik-Bold.d43efa6b.ttf"
   },
   {
     "revision": "158dcc8a80cb7dfa4173288aecd77e92",
