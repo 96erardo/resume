@@ -5,13 +5,13 @@ import { withProfessionalContext } from '../../context/ProfessionalContext';
 function Experience (props) {
     const { exp, selected } = props;
 
-    const nodes = exp.map((item) => (
-        <div className="block">
+    const nodes = exp.map((item, index) => (
+        <div key={index} className="block">
             <h3 className="title">{item.name[selected]}</h3>
             <div className="block-content">
                 <ul className="list">
-                    {item.nodes.map((i) => (
-                        <li>
+                    {item.nodes.map((i, number) => (
+                        <li key={number}>
                             <h4 className="institution">
                                 {i.institution[selected]} <span className="role">{i.role[selected]}</span>
                             </h4>

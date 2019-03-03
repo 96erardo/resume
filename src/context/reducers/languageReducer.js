@@ -7,13 +7,13 @@ export default function languageReducer (state = {}, action) {
             const { payload } = action;
 
             const selected = langs.find((l) => (
-                l.id == payload.id
+                l.id === payload.id
             ));
 
             return {
                 ...state,
                 selected: selected.iso
-            }    
+            }
         default:
             break;
     }

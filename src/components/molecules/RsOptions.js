@@ -7,7 +7,7 @@ export default function RsOptions (props) {
     const onClick = (e) => {
         const id = e.currentTarget.dataset.value;
 
-        handleClick(selectLanguage(id));
+        handleClick(selectLanguage(parseInt(id)));
     }
 
     const list = items.map((item) => (
