@@ -37,3 +37,23 @@ export class LanguageProvider extends React.Component {
 }
 
 export const LanguageConsumer = Context.Consumer;
+
+export function withLanguageContext(WrappedComponent) {
+    class WithLanguageContext extends React.Component {
+        render () {
+            return (
+                <LanguageConsumer>
+                    {state => (
+                        <WrappedComponent {...this.props} {...state}/>
+                    )}
+                </LanguageConsumer>
+            );
+        }
+    }
+
+    const name = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+    WithLanguageContext.displayName = `WithLanguageContext(${name})`;
+
+    return WithLanguageContext;
+};
